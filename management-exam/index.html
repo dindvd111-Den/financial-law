@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Дистанционный зачёт по менеджменту: 25 билетов, вопросы и бланки ответов для специальности 40.05.04 «Судебная и прокурорская деятельность».">
+  <meta name="theme-color" content="#152b35">
+  <title>Менеджмент — дистанционный зачёт</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="tickets.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#tickets">Перейти к билетам</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Менеджмент — главная"><span class="brand-mark" aria-hidden="true">М</span><span>Менеджмент<span class="brand-sub">Учебные материалы</span></span></a>
+    <nav aria-label="Основная навигация"><a href="#tickets">Билеты</a><a href="#instructions">Порядок сдачи <svg class="external-arrow" width="11" height="11" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 10 2M3 2h7v7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Дистанционный формат · письменная работа</div>
+      <div class="hero-grid">
+        <div><h1 id="hero-title">Менеджмент.<br><em>Зачёт по билетам</em></h1><p class="hero-description">Откройте назначенный билет, скачайте бланк<br class="desktop-break"> и подготовьте ответы на два вопроса.</p></div>
+        <aside class="course-details" aria-label="О дисциплине"><span class="detail-label">Специальность</span><p class="specialty-code">40.05.04</p><p>Судебная и прокурорская<br>деятельность</p><div class="course-rule"></div><span class="detail-label">В комплекте</span><p class="course-count"><strong>25</strong> билетов <span>·</span> <strong>2</strong> вопроса</p></aside>
+      </div>
+    </section>
+
+    <section class="ticket-section" id="tickets" aria-labelledby="tickets-title">
+      <div class="section-top"><div><p class="section-kicker">01 / Билеты к зачёту</p><h2 id="tickets-title">Ваш билет</h2></div><p>Номер билета назначает преподаватель.</p></div>
+      <div class="ticket-workspace">
+        <aside class="ticket-picker" aria-label="Выбор билета"><div class="picker-title">Выберите номер <span>01—25</span></div><div class="ticket-grid" id="ticket-grid"></div><p class="picker-hint">Можно открыть билет по прямой ссылке, полученной от преподавателя.</p><div class="picker-bottom"><span class="small-symbol" aria-hidden="true">+</span><span>Бланк расширяется по мере ввода ответов.</span></div></aside>
+        <article class="ticket-content" id="ticket-content" aria-labelledby="ticket-title">
+          <div class="ticket-heading"><p class="ticket-label">Менеджмент / письменный зачёт</p><button class="copy-link" id="copy-link" type="button" aria-label="Скопировать ссылку на этот билет"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m9 15 6-6M8 16l-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 10a4 4 0 0 0 6 0l4-4a4 4 0 0 0-6-6l-1 1" transform="translate(1 0) scale(.9)" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Ссылка на билет</span></button></div>
+          <div aria-live="polite" aria-atomic="true"><h3 id="ticket-title">Билет 01</h3><ol class="questions" id="questions"></ol></div>
+          <div class="answer-guidance"><span class="guidance-icon" aria-hidden="true">i</span><p>По каждому вопросу раскройте основные понятия, объясните связи и приведите пример. Ориентир — 150–250 слов на вопрос.</p></div>
+          <div class="ticket-actions"><a class="download-button" id="download-docx" href="files/ticket-01.docx" download="Билет_01_Менеджмент.docx"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Скачать бланк Word <span class="file-format">DOCX</span></a><a class="pdf-link" id="download-pdf" href="files/ticket-01.pdf" target="_blank" rel="noopener">Для печати · PDF <svg class="external-arrow" width="11" height="11" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 10 10 2M3 2h7v7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
+          <p class="download-note">Укажите в бланке ФИО и группу, затем заполните оба ответа.</p>
+          <div class="copy-status" id="copy-status" role="status"></div>
+          <div id="copy-fallback" class="copy-fallback" hidden><label for="ticket-url">Скопируйте адрес билета:</label><input id="ticket-url" type="text" readonly></div>
+        </article>
+      </div>
+      <noscript><div class="noscript-note">Для переключения билетов включите JavaScript. Все бланки доступны в <a href="files/all-tickets.zip">архиве из 25 билетов</a>.</div></noscript>
+    </section>
+
+    <section class="instructions" id="instructions" aria-labelledby="instructions-title">
+      <div class="section-top"><div><p class="section-kicker">02 / Порядок сдачи</p><h2 id="instructions-title">Три шага к готовой работе</h2></div></div>
+      <div class="steps"><article><span class="step-number">01</span><h3>Скачайте свой билет</h3><p>Откройте назначенный номер и сохраните Word-файл на компьютер. Заполните ФИО, группу и дату выполнения.</p></article><article><span class="step-number">02</span><h3>Подготовьте ответы</h3><p>Ответьте на оба вопроса своими словами. Добавьте примеры и укажите использованные источники в конце бланка.</p></article><article><span class="step-number">03</span><h3>Отправьте преподавателю</h3><p>Отправьте заполненный Word-файл на <a href="mailto:economy_law@mail.ru">economy_law@mail.ru</a>.</p></article></div>
+      <div class="submission-note"><div class="note-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M7 3v4m10-4v4M3 10h18M4 5h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round"/></svg></div><div><h3>Срок сдачи сообщит преподаватель</h3><p>Почта для ответов — <a href="mailto:economy_law@mail.ru">economy_law@mail.ru</a>.<br>Имя готового файла: <code>Фамилия_Группа_Менеджмент_Билет_01.docx</code><br>При техническом сбое сохраните работу и свяжитесь с преподавателем.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><p class="footer-institution">Северо-Кавказский филиал РГУП им. В. М. Лебедева</p><p>Кафедра административного, финансового права и экономики</p><p class="department-head">Заведующая кафедрой — Е. А. Бочкарева</p></div><div class="footer-side"><span>Менеджмент</span><span>Материалы для дистанционного зачёта</span><a href="#top">Наверх</a></div></footer>
+</body>
+</html>
